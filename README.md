@@ -260,6 +260,16 @@ Windows 下双击 `start-dev.bat` 可一次拉起两端。
 
 ---
 
+## 联系
+
+- **Bug 反馈 / 功能建议**：请开 [Issue](https://github.com/zhengj20/sunmao/issues)。公开的问题比私聊更可能被跟进，而且对后来的人有参考价值。
+- **使用求助、部署踩坑、你拿它搭了什么**：发到 [Discussions](https://github.com/zhengj20/sunmao/discussions)。Issues 只留 bug 和功能需求，方便后来人检索。
+- **商务合作、定制开发、AGPL 之外的商业授权**：邮件 <zhjpanx@126.com>，标题注明来意（例如「双许可咨询」「定制开发」）。需要把本平台集成进**闭源**产品、或对外提供服务但**不愿开放源码**的，AGPL 的传染性绕不开，可以邮件谈单独的商业许可证——AGPL 项目用「开源 + 商业双许可」维持下去很常见。
+
+个人项目，回复慢请见谅；技术问题请走 Issue 或 Discussions，不要私聊发日志。
+
+---
+
 ## 许可证
 
 Copyright © 2026 SunMao Contributors
