@@ -1,0 +1,70 @@
+server:
+  port: 5221
+
+spring:
+  application:
+    name: sunmao-server
+  # 本地开发覆盖文件（不入库）：复制 application-local.yml.example 为 application-local.yml
+  # 放在后端进程的工作目录（backend/）下即可自动加载，缺失时静默跳过。
+  config:
+    import: optional:file:./application-local.yml
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:sunmao}?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&rewriteBatchedStatements=true
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 10000
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    encoding: UTF-8
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+    default-property-inclusion: non_null
+
+flowable:
+  database-schema-update: true
+  async-executor-activate: false
+  history-level: full
+  idm:
+    enabled: false
+  app:
+    enabled: false
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+reip:
+  jwt:
+    # 必填：至少 32 字符。生产用环境变量 JWT_SECRET 注入，切勿使用示例值。
+    secret: ${JWT_SECRET:}
+    expire-hours: 12
+  upload:
+    base-path: ./uploads
+  ai:
+    # 必填（仅在使用 AI 数字员工模块时）：LLM API Key 入库加密的主密钥。
+    # 更换主密钥后，数据库中已加密的模型 Key 需重新录入。
+    master-key: ${AI_KEY_MASTER_KEY:}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.reip: info

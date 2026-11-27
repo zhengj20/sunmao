@@ -1,0 +1,46 @@
+# Java
+backend/target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.suo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.*
+
+# 本地覆盖配置（含真实数据库密码/密钥，禁止入库）
+application-local.yml
+backend/application-local.yml
+
+# 运行期产物
+backend/uploads/
+uploads/
+backend/logs/
+logs/
+backend/cp.txt
+backend/ai-test/
+backend/_dbtool/
+
+# 内部方案文档（不开源）
+房地产一体化平台-*.html
+

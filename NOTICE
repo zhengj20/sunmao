@@ -1,0 +1,50 @@
+# Third-party notices
+
+SunMao 榫卯 uses the following third-party components. Their licenses are
+retained by their respective copyright holders; this project is distributed
+under the GNU AGPLv3 only.
+
+## Backend (Maven)
+
+| Component | License |
+|---|---|
+| Spring Boot 3.2.x (spring-web / validation / aop / test) | Apache-2.0 |
+| spring-security-crypto | Apache-2.0 |
+| MyBatis-Plus 3.5.7 | Apache-2.0 |
+| Flowable 7.1.0 (process engine, community edition) | Apache-2.0 |
+| Flyway 9.22.x (core / mysql) | Apache-2.0 |
+| Apache POI 5.2.5 | Apache-2.0 |
+| jjwt 0.12.5 (api / impl / jackson) | Apache-2.0 |
+| springdoc-openapi 2.5.0 | Apache-2.0 |
+| Lombok | MIT |
+| mysql-connector-j | GPL-2.0 with Universal FOSS Exception |
+
+### Note on `mysql-connector-j`
+
+The MySQL JDBC driver is licensed under GPL-2.0 with the Universal FOSS
+Exception, which permits its use alongside programs released under a
+GPL-compatible license. This project is released under AGPL-3.0, and the driver
+is used dynamically (never redistributed as part of this repository's source
+code). If you prefer to avoid the GPL driver entirely, swap the dependency in
+`backend/pom.xml` for `org.mariadb.jdbc:mariadb-java-client` (LGPL-2.1) —
+it is protocol-compatible with MySQL 8 for the SQL used by this project.
+
+## Frontend (npm)
+
+| Component | License |
+|---|---|
+| Vue 3, Vue Router 4, Pinia, vue-i18n | MIT |
+| Element Plus, @element-plus/icons-vue | MIT |
+| ECharts 5, d3 7, three 0.186 | Apache-2.0 / BSD-3 / MIT |
+| axios, dayjs, lodash-es, mammoth | MIT |
+| @vueuse/core | MIT |
+| @mlightcad/* (CAD/DXF viewer suite, 9 packages) | MIT |
+| dxf-parser, dxf-render, dxf-vuer, @velipso/polybool | MIT |
+| Vite 5, @vitejs/plugin-vue | MIT |
+
+## Database migrations
+
+All `backend/src/main/resources/db/migration/V*.sql` seed data is fictional.
+Every organization, supplier, customer, contract, person name, ID number, phone
+number and IP address in the demo data is made up; any resemblance to a real
+entity is coincidental.

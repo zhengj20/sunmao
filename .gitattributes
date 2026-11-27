@@ -1,0 +1,25 @@
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.dwg binary
+*.dxf binary
+*.docx binary
+*.xlsx binary
+*.jar binary
+
+*.java text
+*.vue text
+*.js text
+*.sql text
+*.yml text
+*.md text
+*.html text
+*.xml text
+*.json text

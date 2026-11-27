@@ -1,0 +1,65 @@
+:root {
+  --reip-primary: #185fa5;
+  --reip-sidebar-bg: #0c2d4e;
+  --reip-sidebar-active: #185fa5;
+}
+
+html, body, #app { height: 100%; margin: 0; padding: 0; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13.5px;
+  color: #1f2937;
+  background: #f5f7fa;
+}
+
+/* Element Plus 主色覆盖（对标方案配色） */
+.el-button--primary {
+  --el-button-bg-color: #185fa5;
+  --el-button-border-color: #185fa5;
+  --el-button-hover-bg-color: #2a74bd;
+  --el-button-hover-border-color: #2a74bd;
+  --el-button-active-bg-color: #124a80;
+}
+:root {
+  --el-color-primary: #185fa5;
+  --el-color-primary-light-3: #5687ba;
+  --el-color-primary-light-5: #8aadd2;
+  --el-color-primary-light-7: #c3d6e8;
+  --el-color-primary-light-8: #dde9f3;
+  --el-color-primary-light-9: #eef5fb;
+  --el-color-primary-dark-2: #124a80;
+}
+
+/* 紧凑企业级表格 */
+.el-table { font-size: 13px; }
+.el-table th.el-table__cell { background: #f0f5fa !important; color: #0c447c; font-weight: 600; }
+.el-form-item__label { font-size: 13px; }
+.el-dialog__body { padding-top: 12px; }
+
+/* 通用页面容器 */
+.page-container { padding: 14px 16px; }
+.toolbar-card { margin-bottom: 12px; }
+.table-card .el-card__body { padding: 0; }
+.table-card { margin-bottom: 12px; }
+
+/* 分页常显于列表外部 */
+.pagination-bar {
+  display: flex; justify-content: flex-end; align-items: center;
+  padding: 10px 12px; background: #fff; border-radius: 0 0 4px 4px;
+}
+
+/* 状态标签 */
+.status-tag { margin-right: 0; }
+
+/* 统计卡片 */
+.stat-card { border-radius: 8px; }
+.stat-card .value { font-size: 22px; font-weight: 700; color: #185fa5; }
+.stat-card .label { font-size: 12.5px; color: #6b7280; }
+
+/* 金额等宽数字 */
+.num { font-family: "SF Mono", Consolas, Menlo, monospace; }
+
+/* 详情页字段 */
+.detail-item { margin-bottom: 10px; }
+.detail-item .dl { color: #6b7280; font-size: 12.5px; }
+.detail-item .dv { color: #1f2937; font-size: 13.5px; font-weight: 500; }

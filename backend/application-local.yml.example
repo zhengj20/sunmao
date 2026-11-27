@@ -1,0 +1,21 @@
+# 本地开发覆盖配置模板
+#
+# 用法：复制本文件为 backend/application-local.yml（与后端进程工作目录一致），
+#      填入你自己的数据库账号密码。该文件已被 .gitignore 忽略，不会入库。
+#
+# application.yml 通过 spring.config.import: optional:file:./application-local.yml 加载它，
+# 文件不存在时静默跳过，因此也可以用环境变量代替。
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sunmao?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&rewriteBatchedStatements=true
+    username: root
+    password: 你的数据库密码
+
+reip:
+  jwt:
+    # 至少 32 字符，每个环境独立生成：openssl rand -base64 48
+    secret: 请替换为随机的长随机字符串
+  ai:
+    # LLM API Key 入库加密的主密钥；留空则 AI 模型配置页无法保存 Key（其余模块不受影响）
+    master-key: 请替换为随机字符串
