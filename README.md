@@ -38,6 +38,65 @@ LLM 网关没有可用配置、超时、非 2xx 或输出置信度过低时，�
 
 ---
 
+## 界面一览
+
+> 以下截图来自按上文「快速开始」跑起来的实例，数据全部为**虚构演示数据**（`V8__demo_data.sql` 等），不含任何真实企业或个人信息。
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/00-login.jpg" alt="登录"></td>
+    <td width="50%"><img src="docs/screenshots/01-workbench.jpg" alt="工作台"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>登录</b><br>统一入口，演示账号直接在登录页列出</td>
+    <td align="center"><b>工作台</b><br>13 个业务模块导航、我的待办、经营总览</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/02-cockpit-group.jpg" alt="集团驾驶舱"></td>
+    <td><img src="docs/screenshots/11-plan-cockpit.jpg" alt="项目驾驶舱"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>集团驾驶舱</b><br>签约额 / 回款 / 货值 / 动态成本指标卡，全国项目地图按红黄绿综合预警着色，可下钻到项目</td>
+    <td align="center"><b>项目驾驶舱</b><br>主项计划地铁图（拿地→开工→正负零→预售→开盘）、专项计划责任条线、楼栋形象进度</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/03-invest-calc.jpg" alt="投资测算"></td>
+    <td><img src="docs/screenshots/04-proc-cockpit.jpg" alt="招采驾驶舱"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>投资测算</b><br>测算版本管理，货值 / 总成本 / 净利润 / 平均净利率自动汇总</td>
+    <td align="center"><b>招采驾驶舱</b><br>采购需求→计划→立项→入围→发标→回标→评标→定标全链路漏斗</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/05-cost-dynamic.jpg" alt="动态成本"></td>
+    <td><img src="docs/screenshots/06-sales-cockpit.jpg" alt="销售驾驶舱"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>动态成本</b><br>目标成本 vs 动态成本按科目比对，偏差与无效成本归集</td>
+    <td align="center"><b>销售驾驶舱</b><br>蓄客漏斗、去化率、回款与按揭结构</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/07-sales-room.jpg" alt="房源销控"></td>
+    <td><img src="docs/screenshots/10-expense-cockpit.jpg" alt="费用驾驶舱"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>房源销控</b><br>楼栋/面积/状态筛选，锁定与放开批量操作，销控价与折后价并排</td>
+    <td align="center"><b>费用驾驶舱</b><br>预算执行率、三费占比、费效比、环比突增预警与高频报销人</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/08-digital-employee.jpg" alt="AI 数字员工"></td>
+    <td><img src="docs/screenshots/09-workflow-designer.jpg" alt="流程设计器"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>AI 数字员工</b><br>按条线装配技能、定时触发、执行留痕。未配置大模型时自动降到「规则引擎模式」，业务不中断</td>
+    <td align="center"><b>流程设计器</b><br>审批/条件节点自上而下编排，支持按角色或指定用户、或签会签、字段级权限</td>
+  </tr>
+</table>
+
+未列出的模块（主数据、全面预算、系统集成、工程审图、系统管理）为常规表单/表格页，风格一致。
+
+---
+
 ## 快速开始
 
 ### 环境要求
