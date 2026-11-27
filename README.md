@@ -158,7 +158,7 @@ Windows 下双击 `start-dev.bat` 可一次拉起两端。
 └── .github/workflows/ci.yml
 ```
 
-规模参考：Java 423 文件 / 3.3 万行，Vue 页面 130 个 / 3.9 万行，SQL 迁移 77 个 / 4.5 千行。
+规模参考：Java 423 文件 / 3.7 万行，Vue 单文件组件 142 个（其中业务页面 130 个）/ 3.9 万行，SQL 迁移 77 个 / 4.9 千行。
 
 > 包名 `com.reip` 与配置前缀 `reip.*` 是项目早期代号 REIP（Real Estate Integrated Platform）的遗留命名，未随品牌名一起改动。
 
